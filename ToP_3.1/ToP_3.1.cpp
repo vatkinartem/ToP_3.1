@@ -46,20 +46,21 @@ int main()
     arrFig[1] = &rectangle;
     arrFig[2] = &rectTriangle;
     arrFig[3] = &trapezoid;
-    printf("Figure** arrFig getAray():\n");
+    printf("\nFigure** arrFig (getAray() is virtual function):\n");
     for (int i = 0; i < 4; i++)
     {
         printf("arrFig[%d].getArea() = %.3f\n", i, arrFig[i]->getArea());
     }
     delete[] arrFig;
+    /*end of that block of code*/
 
     COMMANDS com;
 
-    printf("%d - help\n", COMMANDS::help);
+    printf("\n%d - help\n", COMMANDS::help);
 
     do
     {
-        printf("Input command...\n");
+        printf("\nInput command...\n");
         try
         {
             if (scanf("%d", &com) == 0)
@@ -109,7 +110,7 @@ int main()
 }
 
 void loadData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, Trapezoid& trapezoid) {
-    printf("Starting oading data from file\n");
+    printf("Starting loading data from file\n");
     FILE* inputFile = NULL;
     float tempVar0 = 0, tempVar1 = 0, tempVar2 = 0;
     TYPEOFFIGURES figType = TYPEOFFIGURES::defaultFig;
@@ -192,7 +193,7 @@ void loadData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, 
 
     delete[] line;
     fclose(inputFile);
-    printf("Finished loading from file\n");
+    printf("Finished loading data from file\n");
 }
 
 void saveData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, Trapezoid& trapezoid) {
