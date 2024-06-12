@@ -96,7 +96,6 @@ int main()
     return 1337;
 }
 
-
 void loadData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, Trapezoid& trapezoid) {
     printf("Starting oading data from file\n");
     FILE* inputFile = NULL;
@@ -139,13 +138,13 @@ void loadData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, 
             }
             if ((tempVar0 < 0) or (tempVar1 < 0) or (tempVar2 < 0))
             {
-                throw figureParameterException("Wrong value of figure parameter.");
+                throw figureParameterException("Wrong value of figure parameter. One of parameters is lower then 0.");
             }
         }
         catch (const figureTypeException& wrongFigureType)
         {
             printf("%s\n", wrongFigureType.what());
-            break;
+            continue;
         }
         catch (const figureParameterException& wrongFigureParameter) {
             printf("%s\n", wrongFigureParameter.what());
@@ -194,7 +193,7 @@ void saveData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, 
         return;
     }
 
-    fprintf(outputFile, "circle square = %.3f,\nrectangle square = %.3f,\nrectTriangle square = %.3f,\ntrapezoid square = %.3f\n", \
+    fprintf(outputFile, "circle square = %.3f\nrectangle square = %.3f\nrectTriangle square = %.3f\ntrapezoid square = %.3f\n", \
         circle.getArea(), rectangle.getArea(), rectTriangle.getArea(), trapezoid.getArea());
 
     fclose(outputFile);
