@@ -40,10 +40,22 @@ int main()
     
     loadData(circle, rectangle, rectTriangle, trapezoid);
 
+    /*array of Figure pointers to show how virtual functions and abstract classes work*/
+    Figure** arrFig = new Figure * [4]; 
+    arrFig[0] = &circle;
+    arrFig[1] = &rectangle;
+    arrFig[2] = &rectTriangle;
+    arrFig[3] = &trapezoid;
+    printf("Figure** arrFig getAray():\n");
+    for (int i = 0; i < 4; i++)
+    {
+        printf("arrFig[%d].getArea() = %.3f\n", i, arrFig[i]->getArea());
+    }
+    delete[] arrFig;
+
     COMMANDS com;
 
-    printf("%d - square\n%d - help\n%d - exit program\n%d - load\n%d - save\n", \
-        COMMANDS::square, COMMANDS::help, COMMANDS::exit, COMMANDS::load, COMMANDS::save);
+    printf("%d - help\n", COMMANDS::help);
 
     do
     {
@@ -52,7 +64,7 @@ int main()
         {
             if (scanf("%d", &com) == 0)
             {
-                throw NonNumericInputException("Exception. Wrong input! Non Numeric input found.");
+                throw NonNumericInputException("Exception. Non Numeric input found.");
             };
         }
         catch (const NonNumericInputException& MetNonNumericExeption)
