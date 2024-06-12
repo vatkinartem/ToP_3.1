@@ -210,5 +210,5 @@ void saveData(Circle& circle, Rectangle& rectangle, RectTriangle& rectTriangle, 
         circle.getArea(), rectangle.getArea(), rectTriangle.getArea(), trapezoid.getArea());
 
     fclose(outputFile);
-    printf("Finished loading data to file\n");
+    printf("Finished saving data to file\n");
 }
