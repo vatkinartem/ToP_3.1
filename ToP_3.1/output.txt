@@ -1,0 +1,4 @@
+circle square = 78.540,
+rectangle square = 35.880,
+rectTriangle square = 19.400,
+trapezoid square = 45.540

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\MyFiguresHeaders">
+      <UniqueIdentifier>{fef8f298-b77f-4072-8c98-3f5123d2d7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MyFiguresCPP">
+      <UniqueIdentifier>{48683626-db76-44a3-8bd2-d3c65b8fdf2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MyExeptionsCPP">
+      <UniqueIdentifier>{6b7e554b-222d-4e17-bfc4-162883f58873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\MyExceptionsHeaders">
+      <UniqueIdentifier>{b05440ed-ee21-4a88-a0f9-757206d98fc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ToP_3.1.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Trapezoid.cpp">
+      <Filter>Исходные файлы\MyFiguresCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="RectTriangle.cpp">
+      <Filter>Исходные файлы\MyFiguresCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Исходные файлы\MyFiguresCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
+      <Filter>Исходные файлы\MyFiguresCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Исходные файлы\MyFiguresCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="nonNumericInputException.cpp">
+      <Filter>Исходные файлы\MyExeptionsCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="figureParameterException.cpp">
+      <Filter>Исходные файлы\MyExeptionsCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="figureTypeException.cpp">
+      <Filter>Исходные файлы\MyExeptionsCPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nonNumericInputException.h">
+      <Filter>Файлы заголовков\MyExceptionsHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Figure.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFigureLib.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="RectTriangle.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Trapezoid.h">
+      <Filter>Файлы заголовков\MyFiguresHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="figureParameterException.h">
+      <Filter>Файлы заголовков\MyExceptionsHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="myExceptions.h">
+      <Filter>Файлы заголовков\MyExceptionsHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="figureTypeException.h">
+      <Filter>Файлы заголовков\MyExceptionsHeaders</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
