@@ -4,8 +4,6 @@
 #include <stdexcept>
 #include "MyFigureLib.h"
 #include "myExceptions.h"
-#include <malloc.h>
-#include <string.h>
 
 namespace myNS {
     enum COMMANDS {
